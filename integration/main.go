@@ -18,7 +18,10 @@ import (
 	"strings"
 	"sync"
 	"syscall"
+  _ "github.com/mtibben/androiddnsfix"
 )
+
+
 
 func main() {
 	// Handle interrupt signals and shutdown gracefully:

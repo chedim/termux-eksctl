@@ -56,7 +56,7 @@ build: generate-always binary ## Generate, lint and build eksctl binary for curr
 
 .PHONY: binary
 binary: ## Build eksctl binary for current OS and place it at ./eksctl
-	CGO_ENABLED=0 go build -ldflags "-X $(version_pkg).gitCommit=$(git_commit) -X $(version_pkg).buildDate=$(build_date)" ./cmd/eksctl
+	CGO_ENABLED=0 go build -tags='androiddnsfix' -ldflags "-X $(version_pkg).gitCommit=$(git_commit) -X $(version_pkg).buildDate=$(build_date)" ./cmd/eksctl 
 
 
 .PHONY: build-all
@@ -116,9 +116,9 @@ unit-test-race: ## Run unit test with race detection
 build-integration-test: $(all_generated_code) ## Ensure integration tests compile
 	@# Compile integration test binary without running any.
 	@# Required as build failure aren't listed when running go build below. See also: https://github.com/golang/go/issues/15513
-	go test -tags integration -run=^$$ ./integration/...
+	go test -tags 'integration androiddnsfix' -run=^$$ ./integration/...
 	@# Build integration test binary:
-	go build -tags integration -o ./eksctl-integration-test ./integration/main.go
+	go build -tags 'integration androiddnsfix' -o ./eksctl-integration-test ./integration/main.go
 
 .PHONY: integration-test
 integration-test: build build-integration-test ## Run the integration tests (with cluster creation and cleanup)

@@ -26,6 +26,7 @@ import (
 	"github.com/weaveworks/eksctl/pkg/ctl/update"
 	"github.com/weaveworks/eksctl/pkg/ctl/upgrade"
 	"github.com/weaveworks/eksctl/pkg/ctl/utils"
+  _ "github.com/mtibben/androiddnsfix"
 )
 
 func addCommands(rootCmd *cobra.Command, flagGrouping *cmdutils.FlagGrouping) {

@@ -1,3 +1,9 @@
+# Termux-eksctl - the unofficial fork of eksctl for Termux
+## Installation
+Download the eksctl binary from the root of this repo and copy it to your PATH
+## Building
+`make binary` 
+
 # `eksctl` - The official CLI for Amazon EKS
 
 [![Circle CI](https://circleci.com/gh/weaveworks/eksctl/tree/main.svg?style=shield)](https://circleci.com/gh/weaveworks/eksctl/tree/main) [![Coverage Status](https://coveralls.io/repos/github/weaveworks/eksctl/badge.svg?branch=main)](https://coveralls.io/github/weaveworks/eksctl?branch=main) [![Go Report Card](https://goreportcard.com/badge/github.com/weaveworks/eksctl)](https://goreportcard.com/report/github.com/weaveworks/eksctl)
