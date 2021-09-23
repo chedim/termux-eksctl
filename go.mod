@@ -226,7 +226,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.1 // indirect
 	github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00 // indirect
 	github.com/moricho/tparallel v0.2.1 // indirect
-	github.com/mtibben/androiddnsfix v0.0.0-20200907095054-ff0280446354
 	github.com/nakabonne/nestif v0.3.0 // indirect
 	github.com/nbutton23/zxcvbn-go v0.0.0-20210217022336-fa2cb2858354 // indirect
 	github.com/nishanths/exhaustive v0.2.3 // indirect
@@ -340,7 +339,7 @@ require (
 	gopkg.in/square/go-jose.v2 v2.3.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 	honnef.co/go/tools v0.2.1 // indirect
 	k8s.io/api v0.21.2
@@ -375,6 +374,7 @@ require (
 
 require (
 	github.com/census-instrumentation/opencensus-proto v0.3.0 // indirect
+	github.com/chedim/androiddnsfix v0.0.7 // indirect
 	github.com/cncf/udpa/go v0.0.0-20210322005330-6414d713912e // indirect
 	github.com/coreos/go-systemd/v22 v22.3.2 // indirect
 	github.com/envoyproxy/go-control-plane v0.9.9-0.20210217033140-668b12f5399d // indirect

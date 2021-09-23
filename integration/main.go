@@ -18,7 +18,6 @@ import (
 	"strings"
 	"sync"
 	"syscall"
-  _ "github.com/mtibben/androiddnsfix"
 )
 
 
